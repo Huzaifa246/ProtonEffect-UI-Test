@@ -37,6 +37,11 @@ body {
 .display-flex {
   display: var(--d-flex);
 }
+.flex-items-center{
+  display: var(--d-flex);
+  align-items: center;
+  justify-content: center;
+}
 .flex-between-align {
   display: var(--d-flex);
   justify-content: var(--justify-between);
@@ -478,6 +483,84 @@ footer {
   to {opacity: 1}
 }
 
+.steps-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.bussiness-logos {
+  margin-bottom: 30px;
+}
+
+.bussiness-logos h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.bussiness-logos .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bussiness-logos img {
+  max-width: 120px;
+  margin: 10px;
+}
+
+.steps-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.steps-content h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.steps-content .highlight {
+  color: #0acf83;
+}
+
+.steps-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.step img {
+  height: 250px;
+  width: auto;
+}
+.step {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.step h3 {
+  font-size: 3.7rem;
+  color: #d1d5db;
+}
+
+.step p {
+  font-size: 16px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+
 /* Additional Media Query for Footer */
 @media (max-width: 768px) {
   .footer-columns {
@@ -614,6 +697,21 @@ footer {
     background-color: var(--primary-color) !important;
     color: white !important;
   }
+  .steps {
+    flex-direction: column;
+  }
+
+  .bussiness-logos .logos {
+    justify-content: center;
+  }
+
+  .step {
+    max-width: none;
+    margin: 20px 0;
+  }
+  .step img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -666,5 +764,12 @@ footer {
   }
   .navbar .logo img {
     height:
+  }
+  .step img {
+    height: 120px;
+  }
+  .step{
+    display: var(--d-flex);
+    align-items: center;
   }
 }
